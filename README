@@ -1,0 +1,65 @@
+-----------------------------------------------------------------------------
+-                                                                           -
+-   Copyright (C) 2014 Alex Bailey                                          -
+-                                                                           -
+-   'FIIOFS' is free software: you can redistribute it and/or modify it     -
+-   under the terms of the GNU General Public License as published by       -
+-   the Free Software Foundation, either version 3 of the license, or       -
+-   (at your option) any later version.                                     -
+-                                                                           -
+-   'FIIOFS' is distributed in the hope that it will be useful, but         -
+-   WITHOUT ANY WARRANTY; without even the implied warranty of              -
+-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           -
+-   GNU General Public License for more details.                            -
+-                                                                           -
+-   A copy of the GNU General Public License is available in the file       -
+-   'COPYING'; or for later versions see <http://www.gnu.org/licenses/>.    -
+-                                                                           -
+-   You can contact the author through the website:                         -
+-   alexanderbailey.github.io                                               -
+-                                                                           -
+-----------------------------------------------------------------------------
+
+This is the README file for 'FIIOFS'. The project website is located at:
+
+alexanderbailey.github.io/software
+
+'FIIOFS' is mathematical software for computing Finite (Rees) Index Ideals Of Free Semigroups. Background material, pseduo-code and justification of the algorithms can be found in the paper [arxiv.org/abs/1409.2444].
+
+--------
+Contents
+--------
+
+After extraction, the folder FIIOFS should contain the directories
+
+  ideals
+  ideals/n-2
+
+the source code files
+
+  next_index_ideal.cpp
+  join_ideal.cpp
+  parallel_join_config_ideal.cpp
+  parallel_join_ideal.cpp
+  get_poly_ideal.cpp
+  read_file_ideal.cpp
+
+the data files
+
+  ideals/n-2/n-2-k-1-i-1.bit8
+  ideals/n-2/n-2-k-2-i-1.bit8
+
+the license file COPYING and this README file.
+
+----------------
+General comments
+----------------
+
+This functions in exactly the same way as 'FISOFS' except it calculates ideals instead of subsemigroups.
+See the README file for 'FISOFS' for descriptions and examples of running the code.
+
+To optimise space, the encoding of the files for ideals is slightly different than for subsemigroups, so any attempt to read subsemigroup data files instead of ideal data files will fail.
+
+Please feel free to email me any bugs, questions or comments etc.
+
+
